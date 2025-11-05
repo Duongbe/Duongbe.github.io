@@ -1,0 +1,298 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f7f7f7;
+  line-height: 1.6;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  padding: 10px 20px;
+}
+
+.logo img {
+  height: 70px;
+  width: auto;
+  margin-right: 15px;
+}
+
+.logo h1 {
+  font-size: 22px;
+  color: #ff6600;
+  font-weight: bold;
+}
+
+#menu {
+  background-color: #ff6600;
+  text-align: center;
+  position: relative;
+}
+
+#menu ul {
+  list-style: none;
+  display: inline-flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+#menu ul li {
+  position: relative;
+}
+
+#menu ul li a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  padding: 14px 22px;
+  font-weight: 600;
+  transition: background 0.3s;
+}
+
+#menu ul li a:hover {
+  background: #e55c00;
+}
+
+#menu ul ul {
+  position: absolute;
+  top: 48px;
+  left: 0;
+  background: #ff6600;
+  display: none;
+  flex-direction: column;
+  min-width: 180px;
+  border-radius: 0 0 6px 6px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+#menu ul ul li a {
+  padding: 12px 16px;
+  text-align: left;
+}
+
+#menu ul li:hover > ul {
+  display: flex;
+}
+
+#main {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 30px 40px;
+  gap: 30px;
+}
+
+#content {
+  flex: 2;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+#content2 {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+#news, #info {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+#news h1, #info h1 {
+  color: #ff6600;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+iframe {
+  width: 100%;
+  border-radius: 8px;
+}
+
+#content h2, #content h3 {
+  color: #ff6600;
+  margin-bottom: 10px;
+}
+
+#content p {
+  margin-bottom: 15px;
+  text-align: justify;
+}
+
+#content ul {
+  margin: 10px 0 20px 30px;
+  list-style: disc;
+}
+
+#content ul li {
+  margin-bottom: 6px;
+  font-size: 15px;
+}
+
+#content table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+  background: white;
+  border: 2px solid black;
+}
+
+#content th, #content td {
+  border: 1px solid white;
+  padding: 10px 12px;
+  text-align: left;
+}
+
+#content th {
+  background-color: white;
+  color: black;
+}
+
+#content tr:nth-child(even) {
+  background-color: orange;
+}
+
+.news-container {
+  display: grid;
+  gap: 25px;
+  padding: 0 40px 40px;
+}
+
+.news-card {
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.news-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+}
+
+.news-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.news-content {
+  padding: 15px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+
+.news-content h3 {
+  color: #333;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.news-content p {
+  color: #555;
+  font-size: 15px;
+  margin-bottom: 15px;
+  flex-grow: 1;
+  text-align: justify;
+}
+
+.news-content .btn {
+  align-self: flex-start;
+  background: #ff6600;
+  color: white;
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  transition: background 0.3s;
+}
+
+.news-content .btn:hover {
+  background: #e55c00;
+}
+
+#content form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+#content label {
+  font-weight: 600;
+  color: #333;
+}
+
+#content input,
+#content textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 15px;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+#content input:focus,
+#content textarea:focus {
+  border-color: #ff6600;
+  box-shadow: 0 0 4px rgba(255,102,0,0.3);
+  outline: none;
+}
+
+#content button {
+  width: 120px;
+  align-self: center;
+  background: #ff6600;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+#content button:hover {
+  background: #e55c00;
+}
+
+footer {
+  background: #ff6600;
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 20px 40px;
+  gap: 20px;
+  width: 100%;
+}
+
+footer img {
+  height: 60px;
+  width: auto;
+}
+
+footer p {
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+footer ul {
+  list-style: none;
+}
+
+footer li {
+  margin: 3px 0;
+  font-size: 14px;
+}
